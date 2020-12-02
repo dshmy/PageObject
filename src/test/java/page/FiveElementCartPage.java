@@ -10,8 +10,6 @@ import org.openqa.selenium.By;
 public class FiveElementCartPage extends AbstractPage {
     @FindBy(xpath = "//div[@class=\"cart-products__row cart-products__row_ga\"]")
     private List<WebElement> cartItems;
-    @FindBy(xpath = "//button[@class=\"cart-small-remove cart-extra__selected-remove\"]")
-    private WebElement deletePhoneButton;
     @FindBy(xpath = "//button[@class=\"button small button-simple secondary\"]")
     private WebElement addOneMoreItemButton;
     public FiveElementCartPage(WebDriver driver){
